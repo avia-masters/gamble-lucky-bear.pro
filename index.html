@@ -445,6 +445,29 @@
         }
         .keyword-cloud span:hover { border-color: #4ab8ff; color: #4ab8ff; }
 
+        /* Пагинация запросов */
+        .queries-pager {
+            position: relative;
+            display: flex; align-items: center; gap: 10px;
+            margin-top: 10px;
+        }
+        .queries-pager .table-wrap { flex: 1; min-width: 0; }
+        .queries-arrow {
+            flex-shrink: 0;
+            width: 44px; height: 44px; border-radius: 50%;
+            border: 1px solid #1a3050; background: rgba(17, 29, 53, 0.7);
+            color: #4ab8ff; font-size: 18px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: 0.3s;
+        }
+        .queries-arrow:hover { border-color: #4ab8ff; box-shadow: 0 0 20px rgba(74, 184, 255, 0.2); }
+        .queries-arrow:disabled { opacity: 0.35; cursor: not-allowed; }
+        .queries-counter {
+            text-align: center; font-size: 14px; color: #8aaac8;
+            margin-top: 8px;
+        }
+        .queries-counter strong { color: #4ab8ff; }
+
         @media (max-width: 992px) {
             .hero-grid { grid-template-columns: 1fr; }
             .home-overview { grid-template-columns: 1fr; }
@@ -465,6 +488,8 @@
             .mobile-bar { display: flex; }
             .site-footer { padding-bottom: 80px; }
             .overview-links a { font-size: 12px; padding: 3px 10px; }
+            .queries-pager { flex-wrap: wrap; }
+            .queries-arrow { width: 38px; height: 38px; }
         }
 
         @media (max-width: 480px) {
@@ -613,15 +638,15 @@
                         <strong>Регистрация</strong>
                         <span>Создание аккаунта в Lucky Bear, проверка контактов и защита пароля.</span>
                     </a>
-                    <a href="bonus.html">
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                         <strong>Бонусы</strong>
                         <span>Приветственный бонус 200%, вейджер, срок, максимальная ставка и ограничения.</span>
                     </a>
-                    <a href="#payments">
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                         <strong>Платежи</strong>
                         <span>Валюты СНГ, вывод на карту и USDT, комиссия и идентификатор операции.</span>
                     </a>
-                    <a href="app.html">
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                         <strong>Приложение</strong>
                         <span>Android, APK, iOS, PWA и безопасная установка Lucky Bear.</span>
                     </a>
@@ -708,237 +733,22 @@
                     </div>
 
                     <h2 id="keyword-queries">Популярные запросы о Lucky Bear казино</h2>
-                    <p>Ниже собраны фразы, по которым игроки чаще всего ищут Лаки Бир в Яндексе и Google. Если вы ищете конкретный раздел — воспользуйтесь таблицей: она поможет быстро перейти на нужную страницу сайта.</p>
-                    <div class="table-wrap">
-                        <table>
-                            <thead>
-                                <tr><th>Запрос</th><th>Куда перейти</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>лакибир фриспины без депозита</td><td><a href="bonus.html">Бонусы и фриспины</a></td></tr>
-                                <tr><td>лаки бир зеркало / рабочее зеркало</td><td><a href="#address">Актуальное зеркало</a></td></tr>
-                                <tr><td>лаки бир промокод на сегодня</td><td><a href="bonus.html">Промокоды</a></td></tr>
-                                <tr><td>вывод на карту / вывод на СБП</td><td><a href="#payments">Платежи</a></td></tr>
-                                <tr><td>lucky bear новые слоты 2026</td><td><a href="games.html">Каталог слотов</a></td></tr>
-                                <tr><td>кэшбэк казино / еженедельный бонус</td><td><a href="vip.html">VIP и кэшбэк</a></td></tr>
-                                <tr><td>lucky bear casino официальный сайт зеркало</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>lakibir casino / luckybear casino</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>приветственный бонус / бонус 200%</td><td><a href="bonus.html">Бонус 200%</a></td></tr>
-                                <tr><td>слоты на деньги / игровые автоматы</td><td><a href="games.html">Игры</a></td></tr>
-                                <tr><td>luckybear bot / телеграм бот</td><td><a href="app.html">Приложение и бот</a></td></tr>
-                                <tr><td>lucky bear пополнение через крипту</td><td><a href="#payments">Платежи</a></td></tr>
-                                <tr><td>казино luckybear регистрация</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>лаки бир купон на бонус</td><td><a href="bonus.html">Купоны</a></td></tr>
-                                <tr><td>лаки бир вход / официальный вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>Galaxsys / NetEnt / Hacksaw Gaming</td><td><a href="games.html">Провайдеры</a></td></tr>
-                                <tr><td>lucky bear верификация аккаунта</td><td><a href="rules.html#security">Верификация</a></td></tr>
-                                <tr><td>как стать VIP</td><td><a href="vip.html">VIP-программа</a></td></tr>
-                                <tr><td>лаки бир слоты с джекпотом</td><td><a href="games.html">Слоты с джекпотом</a></td></tr>
-                                <tr><td>рулетка онлайн / блэкджек онлайн / баккара</td><td><a href="games.html">Live-казино</a></td></tr>
-                                <tr><td>lucky bear bet / gambling lucky bear</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>luckybear casino официальный</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>лаки бир казино зеркало рабочее</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>luckybear бонус без депозита</td><td><a href="bonus.html">Бонус без депозита</a></td></tr>
-                                <tr><td>промокод Lucky Bear / промокод luckybear</td><td><a href="bonus.html">Промокоды</a></td></tr>
-                                <tr><td>luckybear актуальное зеркало</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>стратегия игры в слоты / управление банкроллом</td><td><a href="rules.html">Ответственная игра</a></td></tr>
-                                <tr><td>рабочее зеркало лакибир</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>lucky bear телеграм бот</td><td><a href="app.html">Бот</a></td></tr>
-                                <tr><td>лаки бир официальный вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>лакибир казино бонусы</td><td><a href="bonus.html">Бонусы</a></td></tr>
-                                <tr><td>luckybear сроки вывода денег</td><td><a href="#payments">Платежи</a></td></tr>
-                                <tr><td>пополнение казино / бонус за пополнение</td><td><a href="bonus.html">Бонус за пополнение</a></td></tr>
-                                <tr><td>lucky bear казино вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>luckybear честный обзор / надёжное казино</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>лаки беар казино регистрация</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>как выиграть в казино</td><td><a href="rules.html">Стратегии</a></td></tr>
-                                <tr><td>lucky bear casino вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>lucky bear баккара онлайн</td><td><a href="games.html">Live-казино</a></td></tr>
-                                <tr><td>казино luckybear / laki bir casino</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>luckybear casino играть на рубли</td><td><a href="games.html">Игры на рубли</a></td></tr>
-                                <tr><td>слоты / новые слоты</td><td><a href="games.html">Слоты</a></td></tr>
-                                <tr><td>лакибир казино официальный вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>личный менеджер казино</td><td><a href="vip.html">VIP-менеджер</a></td></tr>
-                                <tr><td>lucky bear регистрация по телефону</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>лаки бир бот / luckybear регистрация в один клик</td><td><a href="app.html">Бот и регистрация</a></td></tr>
-                                <tr><td>лакибир бонус на первый депозит</td><td><a href="bonus.html">Бонус на депозит</a></td></tr>
-                                <tr><td>бонусы в казино</td><td><a href="bonus.html">Бонусы</a></td></tr>
-                                <tr><td>блэкджек онлайн</td><td><a href="games.html">Live-казино</a></td></tr>
-                                <tr><td>лаки бир регистрация через почту</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>luckybear партнерская программа</td><td><a href="contacts.html">Партнёрам</a></td></tr>
-                                <tr><td>лаки бир com официальный</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>luckybear casino / lucky bear фриспины за регистрацию</td><td><a href="bonus.html">Фриспины</a></td></tr>
-                                <tr><td>Pixmove / Pragmatic Play / Push Gaming</td><td><a href="games.html">Провайдеры</a></td></tr>
-                                <tr><td>lucky bear казино официальный сайт</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>игровые автоматы</td><td><a href="games.html">Игры</a></td></tr>
-                                <tr><td>лаки бир рулетка онлайн</td><td><a href="games.html">Рулетка</a></td></tr>
-                                <tr><td>лакибир бонусы</td><td><a href="bonus.html">Бонусы</a></td></tr>
-                                <tr><td>лицензионное казино</td><td><a href="rules.html">Лицензия</a></td></tr>
-                                <tr><td>фриспины</td><td><a href="bonus.html">Фриспины</a></td></tr>
-                                <tr><td>лаки бир официальный сайт</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>как играть в казино</td><td><a href="rules.html">Как играть</a></td></tr>
-                                <tr><td>lucky bear vip бонус</td><td><a href="vip.html">VIP-бонус</a></td></tr>
-                                <tr><td>лакибир смена пароля</td><td><a href="contacts.html">Поддержка</a></td></tr>
-                                <tr><td>казино lucky bear / Lucky Bear</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>лаки бир личный кабинет вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>luckybear casino официальный сайт</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>gambling lucky bear</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>лаки бир приложение для андроид</td><td><a href="app.html">Android</a></td></tr>
-                                <tr><td>lucky bear отзывы реальные</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>лаки бир вывод на СБП</td><td><a href="#payments">СБП</a></td></tr>
-                                <tr><td>lucky bear приложение для ios</td><td><a href="app.html">iOS</a></td></tr>
-                                <tr><td>лаки бир рабочее зеркало</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>lucky bear отзывы</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>вывод средств из казино</td><td><a href="#payments">Вывод</a></td></tr>
-                                <tr><td>бонус 200%</td><td><a href="bonus.html">Бонус 200%</a></td></tr>
-                                <tr><td>luckybear casino мобильная версия</td><td><a href="app.html">Мобильная версия</a></td></tr>
-                                <tr><td>лаки бир казино вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>lucky bear официальный сайт</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>Lucky Bear Казино</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>казино с быстрым выводом</td><td><a href="#payments">Быстрый вывод</a></td></tr>
-                                <tr><td>лаки бир игры с живым дилером</td><td><a href="games.html">Live-казино</a></td></tr>
-                                <tr><td>лаки бир казино</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>lucky bear вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>Evolution</td><td><a href="games.html">Провайдер Evolution</a></td></tr>
-                                <tr><td>lucky bear лицензия казино</td><td><a href="rules.html">Лицензия</a></td></tr>
-                                <tr><td>лакибир слоты</td><td><a href="games.html">Слоты</a></td></tr>
-                                <tr><td>casino lucky bear</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>luckybear официальный сайт</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>luckybear депозитный бонус</td><td><a href="bonus.html">Депозитный бонус</a></td></tr>
-                                <tr><td>лаки бир casino</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>лаки бир слоты</td><td><a href="games.html">Слоты</a></td></tr>
-                                <tr><td>игры с живым дилером</td><td><a href="games.html">Live-казино</a></td></tr>
-                                <tr><td>минимальная сумма вывода</td><td><a href="#payments">Лимиты</a></td></tr>
-                                <tr><td>лаки бир комиссия за вывод</td><td><a href="#payments">Комиссия</a></td></tr>
-                                <tr><td>бонус за регистрацию</td><td><a href="bonus.html">Бонус за регистрацию</a></td></tr>
-                                <tr><td>Лаки Бэр</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>лакибир казино вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>luckybear gambling</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>luckybear tg</td><td><a href="app.html">Telegram</a></td></tr>
-                                <tr><td>lucky bear приветственный бонус 200%</td><td><a href="bonus.html">Приветственный бонус</a></td></tr>
-                                <tr><td>PG Soft</td><td><a href="games.html">PG Soft</a></td></tr>
-                                <tr><td>lucky bear вывод USDT</td><td><a href="#payments">USDT</a></td></tr>
-                                <tr><td>лучшее онлайн казино</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>лакибир казино мобильная версия</td><td><a href="app.html">Мобильная версия</a></td></tr>
-                                <tr><td>luckybear вывод на карту Сбербанка</td><td><a href="#payments">Карта</a></td></tr>
-                                <tr><td>быстрый вывод</td><td><a href="#payments">Вывод</a></td></tr>
-                                <tr><td>lucky bear регистрация</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>официальный сайт lucky bear</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>luckybear игровые автоматы</td><td><a href="games.html">Игры</a></td></tr>
-                                <tr><td>лаки бир казино регистрация вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>провайдеры</td><td><a href="games.html">Провайдеры</a></td></tr>
-                                <tr><td>luckybear слоты</td><td><a href="games.html">Слоты</a></td></tr>
-                                <tr><td>медведь казино lucky bear</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>лаки бир мобильное приложение скачать</td><td><a href="app.html">Скачать</a></td></tr>
-                                <tr><td>слоты с джекпотом</td><td><a href="games.html">Джекпоты</a></td></tr>
-                                <tr><td>luckybear casino на рубли</td><td><a href="games.html">Игры на рубли</a></td></tr>
-                                <tr><td>казино с логотипом медведя</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>высокий RTP</td><td><a href="games.html">RTP</a></td></tr>
-                                <tr><td>ЛакиБир</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>топ казино 2026</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>лаки бир бот в телеграмме</td><td><a href="app.html">Бот</a></td></tr>
-                                <tr><td>lucky bear casino ru</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>купон lucky bear</td><td><a href="bonus.html">Купоны</a></td></tr>
-                                <tr><td>luckybear блэкджек онлайн</td><td><a href="games.html">Блэкджек</a></td></tr>
-                                <tr><td>BGaming</td><td><a href="games.html">BGaming</a></td></tr>
-                                <tr><td>luckybear casino сайт зеркало</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>лакибир войти</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>lucky bear промокод 2026</td><td><a href="bonus.html">Промокоды</a></td></tr>
-                                <tr><td>luckybear casino мобильная версия вход</td><td><a href="app.html">Мобильная версия</a></td></tr>
-                                <tr><td>лакибир телеграм бот</td><td><a href="app.html">Бот</a></td></tr>
-                                <tr><td>Push Gaming</td><td><a href="games.html">Push Gaming</a></td></tr>
-                                <tr><td>лаки бир минимальная сумма пополнения</td><td><a href="#payments">Лимиты</a></td></tr>
-                                <tr><td>lucky bear зеркало сайта</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>luckybear личный кабинет</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>обзор слота</td><td><a href="games.html">Обзоры</a></td></tr>
-                                <tr><td>lucky bear тг бот</td><td><a href="app.html">Бот</a></td></tr>
-                                <tr><td>Pragmatic Play</td><td><a href="games.html">Pragmatic Play</a></td></tr>
-                                <tr><td>онлайн казино</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>lucky bear casino официальный</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>лаки бир бонусы</td><td><a href="bonus.html">Бонусы</a></td></tr>
-                                <tr><td>игровые автоматы luckybear casino</td><td><a href="games.html">Игры</a></td></tr>
-                                <tr><td>лакибир пополнение через Т-банк</td><td><a href="#payments">Т-банк</a></td></tr>
-                                <tr><td>лаки бир вывод на Т-банк</td><td><a href="#payments">Т-банк</a></td></tr>
-                                <tr><td>Relax Gaming</td><td><a href="games.html">Relax Gaming</a></td></tr>
-                                <tr><td>лаки бир еженедельный бонус</td><td><a href="bonus.html">Еженедельный бонус</a></td></tr>
-                                <tr><td>luckybear лимиты на вывод</td><td><a href="#payments">Лимиты</a></td></tr>
-                                <tr><td>lucky bear восстановление пароля</td><td><a href="contacts.html">Поддержка</a></td></tr>
-                                <tr><td>lucky bear казино промокод</td><td><a href="bonus.html">Промокоды</a></td></tr>
-                                <tr><td>lucky bear промокод</td><td><a href="bonus.html">Промокоды</a></td></tr>
-                                <tr><td>лаки бир пополнение через СБП</td><td><a href="#payments">СБП</a></td></tr>
-                                <tr><td>лакибир лицензионное казино</td><td><a href="rules.html">Лицензия</a></td></tr>
-                                <tr><td>лакибир популярные слоты</td><td><a href="games.html">Популярные слоты</a></td></tr>
-                                <tr><td>лаки бир бонус за пополнение счета</td><td><a href="bonus.html">Бонус за пополнение</a></td></tr>
-                                <tr><td>промокод luckybear</td><td><a href="bonus.html">Промокоды</a></td></tr>
-                                <tr><td>популярные слоты</td><td><a href="games.html">Слоты</a></td></tr>
-                                <tr><td>luckybear бонусы</td><td><a href="bonus.html">Бонусы</a></td></tr>
-                                <tr><td>рабочее зеркало лаки бир</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>реальные отзывы о казино</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>лаки бир создать аккаунт</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>рабочее зеркало lucky bear</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>казино с выводом на карту</td><td><a href="#payments">Вывод на карту</a></td></tr>
-                                <tr><td>казино лакибир регистрация</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>лакибир казино официальный сайт</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>лаки бир актуальное зеркало на сегодня</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>лаки бир казино развод или нет</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>лаки бир вход по номеру телефона</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>лакибир вывод криптовалюты</td><td><a href="#payments">Крипта</a></td></tr>
-                                <tr><td>lucky bear казино зеркало</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>luckybear com</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>лаки бир казино зеркало</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>lucky bear пополнение с карты</td><td><a href="#payments">Карта</a></td></tr>
-                                <tr><td>lucky bear игровые автоматы играть бесплатно</td><td><a href="games.html">Демо-игры</a></td></tr>
-                                <tr><td>lucky bear casino официальный сайт</td><td><a href="#official">Официальный сайт</a></td></tr>
-                                <tr><td>lucky bear слоты на деньги</td><td><a href="games.html">Слоты на деньги</a></td></tr>
-                                <tr><td>LuckyBear</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>luckybear официальный сайт регистрация</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>лаки бир как вывести деньги на карту</td><td><a href="#payments">Вывод</a></td></tr>
-                                <tr><td>luckybear casino бонус код</td><td><a href="bonus.html">Бонус-код</a></td></tr>
-                                <tr><td>лаки бир слоты демо</td><td><a href="games.html">Демо-слоты</a></td></tr>
-                                <tr><td>lucky bear слоты</td><td><a href="games.html">Слоты</a></td></tr>
-                                <tr><td>lucky bear зеркало</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>luckybear кэшбэк бонус</td><td><a href="vip.html">Кэшбэк</a></td></tr>
-                                <tr><td>честный обзор казино</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>лакибир бот</td><td><a href="app.html">Бот</a></td></tr>
-                                <tr><td>лакибир покер онлайн</td><td><a href="games.html">Покер</a></td></tr>
-                                <tr><td>лаки бир отзывы игроков 2026</td><td><a href="reviews.html">Отзывы</a></td></tr>
-                                <tr><td>lucky bear вывод на СБП</td><td><a href="#payments">СБП</a></td></tr>
-                                <tr><td>как вывести деньги</td><td><a href="#payments">Вывод</a></td></tr>
-                                <tr><td>пополнение через СБП</td><td><a href="#payments">СБП</a></td></tr>
-                                <tr><td>лаки бир жалобы игроков</td><td><a href="contacts.html">Поддержка</a></td></tr>
-                                <tr><td>лаки бир бонус за регистрацию без депозита</td><td><a href="bonus.html">Без депозита</a></td></tr>
-                                <tr><td>luckybear бонус код</td><td><a href="bonus.html">Бонус-код</a></td></tr>
-                                <tr><td>luckybear casino регистрация</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>luckybear casino вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>вывод USDT</td><td><a href="#payments">USDT</a></td></tr>
-                                <tr><td>лакибир зеркало рабочее 2026</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>вывод на СБП</td><td><a href="#payments">СБП</a></td></tr>
-                                <tr><td>lucky bear live казино</td><td><a href="games.html">Live-казино</a></td></tr>
-                                <tr><td>лаки бир регистрация</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>лаки бир рейтинг казино</td><td><a href="reviews.html">Рейтинг</a></td></tr>
-                                <tr><td>казино на рубли</td><td><a href="games.html">Игры на рубли</a></td></tr>
-                                <tr><td>lucky bear casino login</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>luckybear слоты с высоким RTP</td><td><a href="games.html">RTP</a></td></tr>
-                                <tr><td>lucky bear мобильная версия сайта</td><td><a href="app.html">Мобильная версия</a></td></tr>
-                                <tr><td>luckybear sign in</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>luckybear casino официальный сайт зеркало</td><td><a href="#address">Зеркало</a></td></tr>
-                                <tr><td>lucky bear casino</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>live-казино</td><td><a href="games.html">Live-казино</a></td></tr>
-                                <tr><td>лаки бир официальный сайт регистрация</td><td><a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Регистрация</a></td></tr>
-                                <tr><td>пополнение через Т-банк</td><td><a href="#payments">Т-банк</a></td></tr>
-                                <tr><td>luckybear вход</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>бонус на первый депозит</td><td><a href="bonus.html">Бонус на депозит</a></td></tr>
-                                <tr><td>управление банкроллом</td><td><a href="rules.html">Банкролл</a></td></tr>
-                                <tr><td>lucky bear bot</td><td><a href="app.html">Бот</a></td></tr>
-                                <tr><td>lucky bear войти в личный кабинет</td><td><a href="#login">Вход</a></td></tr>
-                                <tr><td>casino luckybear</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>Лаки Бир</td><td><a href="index.html">Главная</a></td></tr>
-                                <tr><td>как пополнить счёт</td><td><a href="#payments">Пополнение</a></td></tr>
-                                <tr><td>лакибир игровые автоматы</td><td><a href="games.html">Игры</a></td></tr>
-                                <tr><td>luckybear apk скачать</td><td><a href="app.html">APK</a></td></tr>
-                            </tbody>
-                        </table>
+                    <p>Ниже собраны фразы, по которым игроки чаще всего ищут Лаки Бир в Яндексе и Google. Перелистывайте страницы стрелками — каждая строка ведёт на официальный сайт.</p>
+                    <div class="queries-pager">
+                        <button type="button" class="queries-arrow" data-queries-prev aria-label="Предыдущая страница запросов">&#10094;</button>
+                        <div class="table-wrap">
+                            <table>
+                                <thead>
+                                    <tr><th>Запрос</th><th>Куда перейти</th></tr>
+                                </thead>
+                                <tbody data-queries-body>
+                                    <!-- строки рендерятся JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <button type="button" class="queries-arrow" data-queries-next aria-label="Следующая страница запросов">&#10095;</button>
                     </div>
+                    <div class="queries-counter">Страница <strong data-queries-current>1</strong> из <strong data-queries-total>1</strong></div>
 
                     <h2 id="home-faq">Частые вопросы о Lucky Bear казино (Лаки Бир)</h2>
                     <div class="faq">
@@ -1004,11 +814,11 @@
                         <span class="eyebrow">Каталог</span>
                         <h2>Популярные игры Lucky Bear</h2>
                     </div>
-                    <a href="games.html">Все игры →</a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Все игры →</a>
                 </div>
                 <div class="card-grid card-grid-slots">
                     <article class="content-card">
-                        <a href="games.html">
+                        <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                             <figure class="card-media">
                                 <img src="images/anubis-wrath.jpg" alt="Lucky Bear казино — слот Anubis Wrath от Pragmatic Play, играть на деньги" width="1200" height="630" loading="lazy">
                             </figure>
@@ -1020,7 +830,7 @@
                         </a>
                     </article>
                     <article class="content-card">
-                        <a href="games.html">
+                        <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                             <figure class="card-media">
                                 <img src="images/wild-bounty-snowdown.jpg" alt="Lucky Bear казино — слот Wild Bounty Snowdown, играть в онлайн-казино" width="1200" height="630" loading="lazy">
                             </figure>
@@ -1032,7 +842,7 @@
                         </a>
                     </article>
                     <article class="content-card">
-                        <a href="games.html">
+                        <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                             <figure class="card-media">
                                 <img src="images/treasures-of-aztec.jpg" alt="Лаки Бир казино — слот Treasures of Aztec, фриспины и бонусы" width="1200" height="630" loading="lazy">
                             </figure>
@@ -1044,7 +854,7 @@
                         </a>
                     </article>
                     <article class="content-card">
-                        <a href="games.html">
+                        <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                             <figure class="card-media">
                                 <img src="images/crazy-time.jpg" alt="Lucky Bear казино — live-шоу Crazy Time от Evolution, играть онлайн" width="1200" height="630" loading="lazy">
                             </figure>
@@ -1056,7 +866,7 @@
                         </a>
                     </article>
                     <article class="content-card">
-                        <a href="games.html">
+                        <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                             <figure class="card-media">
                                 <img src="images/speed-winner.jpg" alt="Lucky Bear казино — слот Speed Winner от PG Soft, высокий RTP" width="1200" height="630" loading="lazy">
                             </figure>
@@ -1068,7 +878,7 @@
                         </a>
                     </article>
                     <article class="content-card">
-                        <a href="games.html">
+                        <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                             <figure class="card-media">
                                 <img src="images/mines.jpg" alt="Lucky Bear казино — краш-игра Mines от Hacksaw Gaming, играть на деньги" width="1200" height="630" loading="lazy">
                             </figure>
@@ -1080,7 +890,7 @@
                         </a>
                     </article>
                     <article class="content-card">
-                        <a href="games.html">
+                        <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                             <figure class="card-media">
                                 <img src="images/tower-rush.jpg" alt="Lucky Bear казино — игра Tower Rush от Galaxsys, вывод на карту" width="1200" height="630" loading="lazy">
                             </figure>
@@ -1092,7 +902,7 @@
                         </a>
                     </article>
                     <article class="content-card">
-                        <a href="games.html">
+                        <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">
                             <figure class="card-media">
                                 <img src="images/falling-pickaxe.jpg" alt="Lucky Bear казино — игра Falling Pickaxe от Pixmove, бонус за регистрацию" width="1200" height="630" loading="lazy">
                             </figure>
@@ -1115,18 +925,18 @@
                         <span class="eyebrow">Разработчики</span>
                         <h2>Провайдеры Lucky Bear</h2>
                     </div>
-                    <a href="games.html">Каталог провайдеров →</a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored">Каталог провайдеров →</a>
                 </div>
                 <div class="logo-grid">
-                    <a href="games.html"><strong>Pragmatic Play</strong></a>
-                    <a href="games.html"><strong>Evolution</strong></a>
-                    <a href="games.html"><strong>PG Soft</strong></a>
-                    <a href="games.html"><strong>Hacksaw Gaming</strong></a>
-                    <a href="games.html"><strong>BGaming</strong></a>
-                    <a href="games.html"><strong>Play'n GO</strong></a>
-                    <a href="games.html"><strong>Relax Gaming</strong></a>
-                    <a href="games.html"><strong>Push Gaming</strong></a>
-                    <a href="games.html"><strong>NetEnt</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>Pragmatic Play</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>Evolution</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>PG Soft</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>Hacksaw Gaming</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>BGaming</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>Play'n GO</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>Relax Gaming</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>Push Gaming</strong></a>
+                    <a href="https://megaplay333.xyz/5f7Aw7" rel="nofollow sponsored"><strong>NetEnt</strong></a>
                 </div>
             </div>
         </section>
@@ -1204,6 +1014,7 @@
     (function() {
         'use strict';
 
+        /* ---------- Age gate ---------- */
         const ageGate = document.querySelector('[data-age-gate]');
         const ageAccept = document.querySelector('[data-age-accept]');
         const ageReject = document.querySelector('[data-age-reject]');
@@ -1227,6 +1038,7 @@
             });
         }
 
+        /* ---------- Мобильное меню ---------- */
         const menuButton = document.querySelector('[data-menu]');
         const nav = document.querySelector('[data-nav]');
         if (menuButton && nav) {
@@ -1237,7 +1049,7 @@
             });
         }
 
-        // плавный скролл по якорям
+        /* ---------- Плавный скролл по якорям ---------- */
         document.querySelectorAll('a[href^="#"]').forEach(function(link) {
             link.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href');
@@ -1249,6 +1061,286 @@
                 }
             });
         });
+
+        /* ---------- Пагинация популярных запросов ---------- */
+        const REF_URL = 'https://megaplay333.xyz/5f7Aw7';
+        const QUERIES = [
+            'лакибир фриспины без депозита',
+            'лаки бир зеркало',
+            'лаки бир промокод на сегодня',
+            'вывод на карту',
+            'lucky bear новые слоты 2026',
+            'кэшбэк казино',
+            'lucky bear casino официальный сайт зеркало',
+            'lakibir casino',
+            'luckybear casino официальный',
+            'приветственный бонус',
+            'слоты на деньги',
+            'luckybear bot',
+            'lucky bear пополнение через крипту',
+            'luckybear топ казино 2026',
+            'казино luckybear регистрация',
+            'лаки бир купон на бонус',
+            'лаки бир вход',
+            'Galaxsys',
+            'lucky bear верификация аккаунта',
+            'как стать VIP',
+            'лаки бир слоты с джекпотом',
+            'еженедельный бонус',
+            'Лаки Беар',
+            'NetEnt',
+            'lucky bear официальный вход',
+            'VIP программа казино',
+            'вывод криптовалюты',
+            'lucky bear bet',
+            'рулетка онлайн',
+            'lucky bear игровые автоматы',
+            'luckybear официальный сайт вход',
+            'lucky bear надежное казино',
+            'лаки бир казино зеркало рабочее',
+            'лакибир подтверждение личности',
+            'luckybear бонус без депозита',
+            'промокод Lucky Bear',
+            'лаки бир зеркало рабочее сегодня',
+            'luckybear актуальное зеркало',
+            'стратегия игры в слоты',
+            'рабочее зеркало лакибир',
+            'lucky bear телеграм бот',
+            'лаки бир официальный вход',
+            'лакибир казино бонусы',
+            'luckybear сроки вывода денег',
+            'пополнение казино',
+            'lucky bear казино вход',
+            'бонус за пополнение',
+            'luckybear честный обзор',
+            'надёжное казино',
+            'лаки беар казино регистрация',
+            'как выиграть в казино',
+            'lucky bear casino вход',
+            'lucky bear баккара онлайн',
+            'казино luckybear',
+            'luckybear casino играть на рубли',
+            'laki bir casino',
+            'слоты',
+            'лакибир казино официальный вход',
+            'личный менеджер казино',
+            'lucky bear регистрация по телефону',
+            'лаки бир бот',
+            'luckybear регистрация в один клик',
+            'лакибир бонус на первый депозит',
+            'бонусы в казино',
+            'новые слоты',
+            'блэкджек онлайн',
+            'лаки бир регистрация через почту',
+            'luckybear партнерская программа',
+            'лаки бир com официальный',
+            'luckybear casino',
+            'lucky bear фриспины за регистрацию',
+            'Pixmove',
+            'lucky bear казино официальный сайт',
+            'игровые автоматы',
+            'лаки бир рулетка онлайн',
+            'лакибир бонусы',
+            'лицензионное казино',
+            'фриспины',
+            'лаки бир официальный сайт',
+            'как играть в казино',
+            'lucky bear vip бонус',
+            'лакибир смена пароля',
+            'казино lucky bear',
+            'лаки бир личный кабинет вход',
+            'Lucky Bear',
+            'luckybear casino официальный сайт',
+            'Hacksaw Gaming',
+            'gambling lucky bear',
+            'лаки бир приложение для андроид',
+            'lucky bear отзывы реальные',
+            'лаки бир вывод на СБП',
+            'lucky bear приложение для ios',
+            'лаки бир рабочее зеркало',
+            'lucky bear отзывы',
+            'вывод средств из казино',
+            'бонус 200%',
+            'luckybear casino мобильная версия',
+            'лаки бир казино вход',
+            'lucky bear официальный сайт',
+            'Lucky Bear Казино',
+            'казино с быстрым выводом',
+            'лаки бир игры с живым дилером',
+            'лаки бир казино',
+            'lucky bear вход',
+            'Evolution',
+            'lucky bear лицензия казино',
+            'лакибир слоты',
+            'casino lucky bear',
+            'luckybear официальный сайт',
+            'luckybear депозитный бонус',
+            'лаки бир casino',
+            'лаки бир слоты',
+            'игры с живым дилером',
+            'минимальная сумма вывода',
+            'лаки бир комиссия за вывод',
+            'бонус за регистрацию',
+            'Лаки Бэр',
+            'лакибир казино вход',
+            'luckybear gambling',
+            'luckybear tg',
+            'lucky bear приветственный бонус 200%',
+            'PG Soft',
+            'lucky bear вывод USDT',
+            'лучшее онлайн казино',
+            'лакибир казино мобильная версия',
+            'luckybear вывод на карту Сбербанка',
+            'быстрый вывод',
+            'lucky bear регистрация',
+            'официальный сайт lucky bear',
+            'luckybear игровые автоматы',
+            'лаки бир казино регистрация вход',
+            'провайдеры',
+            'luckybear слоты',
+            'медведь казино lucky bear',
+            'лаки бир мобильное приложение скачать',
+            'слоты с джекпотом',
+            'luckybear casino на рубли',
+            'казино с логотипом медведя',
+            'высокий RTP',
+            'ЛакиБир',
+            'топ казино 2026',
+            'лаки бир бот в телеграмме',
+            'lucky bear casino ru',
+            'купон lucky bear',
+            'luckybear блэкджек онлайн',
+            'BGaming',
+            'luckybear casino сайт зеркало',
+            'лакибир войти',
+            'lucky bear промокод 2026',
+            'luckybear casino мобильная версия вход',
+            'лакибир телеграм бот',
+            'Push Gaming',
+            'лаки бир минимальная сумма пополнения',
+            'lucky bear зеркало сайта',
+            'luckybear личный кабинет',
+            'обзор слота',
+            'lucky bear тг бот',
+            'Pragmatic Play',
+            'онлайн казино',
+            'lucky bear casino официальный',
+            'лаки бир бонусы',
+            'игровые автоматы luckybear casino',
+            'лакибир пополнение через Т-банк',
+            'лаки бир вывод на Т-банк',
+            'Relax Gaming',
+            'лаки бир еженедельный бонус',
+            'luckybear лимиты на вывод',
+            'lucky bear восстановление пароля',
+            'lucky bear казино промокод',
+            'lucky bear промокод',
+            'лаки бир пополнение через СБП',
+            'лакибир лицензионное казино',
+            'лакибир популярные слоты',
+            'лаки бир бонус за пополнение счета',
+            'промокод luckybear',
+            'популярные слоты',
+            'luckybear бонусы',
+            'рабочее зеркало лаки бир',
+            'реальные отзывы о казино',
+            'лаки бир создать аккаунт',
+            'рабочее зеркало lucky bear',
+            'казино с выводом на карту',
+            'казино лакибир регистрация',
+            'лакибир казино официальный сайт',
+            'лаки бир актуальное зеркало на сегодня',
+            'лаки бир казино развод или нет',
+            'лаки бир вход по номеру телефона',
+            'лакибир вывод криптовалюты',
+            'lucky bear казино зеркало',
+            'luckybear com',
+            'лаки бир казино зеркало',
+            'lucky bear пополнение с карты',
+            'lucky bear игровые автоматы играть бесплатно',
+            'lucky bear casino официальный сайт',
+            'lucky bear слоты на деньги',
+            'LuckyBear',
+            'luckybear официальный сайт регистрация',
+            'лаки бир как вывести деньги на карту',
+            'luckybear casino бонус код',
+            'лаки бир слоты демо',
+            'lucky bear слоты',
+            'lucky bear зеркало',
+            'luckybear кэшбэк бонус',
+            'честный обзор казино',
+            'лакибир бот',
+            'лакибир покер онлайн',
+            'лаки бир отзывы игроков 2026',
+            'lucky bear вывод на СБП',
+            'как вывести деньги',
+            'пополнение через СБП',
+            'лаки бир жалобы игроков',
+            'лаки бир бонус за регистрацию без депозита',
+            'luckybear бонус код',
+            'luckybear casino регистрация',
+            'luckybear casino вход',
+            'вывод USDT',
+            'лакибир зеркало рабочее 2026',
+            'вывод на СБП',
+            'lucky bear live казино',
+            'лаки бир регистрация',
+            'лаки бир рейтинг казино',
+            'казино на рубли',
+            'lucky bear casino login',
+            'luckybear слоты с высоким RTP',
+            'lucky bear мобильная версия сайта',
+            'luckybear sign in',
+            'luckybear casino официальный сайт зеркало',
+            'lucky bear casino',
+            'live-казино',
+            'лаки бир официальный сайт регистрация',
+            'пополнение через Т-банк',
+            'luckybear вход',
+            'бонус на первый депозит',
+            'управление банкроллом',
+            'lucky bear bot',
+            'lucky bear войти в личный кабинет',
+            'casino luckybear',
+            'Лаки Бир',
+            'как пополнить счёт',
+            'лакибир игровые автоматы',
+            'luckybear apk скачать'
+        ];
+
+        const PAGE_SIZE = 12;
+        const totalPages = Math.ceil(QUERIES.length / PAGE_SIZE);
+        let currentPage = 0;
+
+        const bodyEl = document.querySelector('[data-queries-body]');
+        const prevBtn = document.querySelector('[data-queries-prev]');
+        const nextBtn = document.querySelector('[data-queries-next]');
+        const currentEl = document.querySelector('[data-queries-current]');
+        const totalEl = document.querySelector('[data-queries-total]');
+
+        if (totalEl) totalEl.textContent = totalPages;
+
+        function renderPage() {
+            if (!bodyEl) return;
+            const start = currentPage * PAGE_SIZE;
+            const slice = QUERIES.slice(start, start + PAGE_SIZE);
+            bodyEl.innerHTML = slice.map(function(q) {
+                return '<tr><td>' + q + '</td>' +
+                       '<td><a href="' + REF_URL + '" rel="nofollow sponsored">Перейти</a></td></tr>';
+            }).join('');
+            if (currentEl) currentEl.textContent = currentPage + 1;
+            if (prevBtn) prevBtn.disabled = currentPage === 0;
+            if (nextBtn) nextBtn.disabled = currentPage >= totalPages - 1;
+        }
+
+        if (prevBtn) prevBtn.addEventListener('click', function() {
+            if (currentPage > 0) { currentPage--; renderPage(); }
+        });
+        if (nextBtn) nextBtn.addEventListener('click', function() {
+            if (currentPage < totalPages - 1) { currentPage++; renderPage(); }
+        });
+
+        renderPage();
     })();
   </script>
 </body>
